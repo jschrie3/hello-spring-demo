@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 // any controller we make needs a controller declaration
 @Controller
 @ResponseBody // if all methods use this annotation, we can put it at the top of the class and remove it from each individual method below
-@GetMapping("hello") // now all methods below will live at path /hello
+@RequestMapping("hello") // now all methods below will live at path /hello
 public class HelloController {
 
     //ROUTES THAT CREATE STATIC RESPONSES
