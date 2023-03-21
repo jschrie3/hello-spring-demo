@@ -1,0 +1,20 @@
+<!--this template will loop over a list of names and display each name in the list-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+
+<ul>
+<!--    for each name in names do what is inside the block-->
+    <th:block th:each="name : ${names}">
+<!--    put the piece of code that will be repeated for each item in the list-->
+        <li th:text="${name}"></li>
+    </th:block>
+</ul>
+
+</body>
+</html>
